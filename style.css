@@ -27,12 +27,15 @@
   }
 
 .loginParent {
+    z-index: 15;
+    position: absolute;
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 95%;
     justify-content: flex-start;
     flex-wrap: nowrap;
     flex-direction: row-reverse;
+    top: 0;
 }
 
 .logo-conatiner img{
@@ -49,16 +52,16 @@
     display: flex;
     position: absolute;
     border-radius: 0px 0px 12px 12px;
-    width: 43%;
+    width: 39%;
     margin-right: 50px;
     padding: 10px;
     top: 0px;
-    box-shadow: #000000 ;
+    box-shadow: rgb(0 0 0 / 26%) 4px 5px;
 }
 
 .imageContainer {
     width: 100%;
-    height: 30vh;
+    height: 155px;
     display: flex;
     justify-content: center;
 
@@ -78,6 +81,7 @@
 
 .buttons {
     display: flex;
+    justify-content: space-between;
 }
 
 .login-section {
@@ -95,6 +99,7 @@
 }
 
 .firstPart {
+    z-index: 20;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +107,7 @@
     background-image: url('/left-side-bg.png');
     background-position: center;
     height: 74vh;
+    clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
 }
 
 .secondPart {
@@ -110,15 +116,40 @@ background-image: url('/right-side-bg.png');
 background-position: center;
 background-repeat: no-repeat;
 height: 74vh;
+clip-path: polygon(9% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .textPart {
-    max-width: 85%;
-    margin: 0 auto;
+    max-width: 80%;
+    /* margin: 0 auto; */
     overflow-y: scroll;
     height: 70vh;
     /* background-color: aqua; */
     color: white;
     text-align: center;
-    padding: 20px;
+    padding-right: 14px;
+}
+
+.infoSection {
+    display: flex;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95%;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.contactSection {
+    width: 30%;
+    display: flex;
+    max-width: 80%;
+    justify-content: space-between;
+}
+
+.footerContainer a{
+    text-decoration: none;
 }
